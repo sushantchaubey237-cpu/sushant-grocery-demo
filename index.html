@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#176b45"><meta name="description" content="Sushant Grocery demo store">
+  <link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="styles.css">
+  <title>Sushant Grocery | Demo</title>
+</head>
+<body>
+<header class="top"><div><b class="brand">🛒 Sushant Grocery</b><small>Fresh essentials, delivered simply</small></div><button id="ownerToggle" class="outline">Owner panel</button></header>
+<main class="wrap">
+  <section class="hero"><div><p class="eyebrow">YOUR LOCAL STORE, ONLINE</p><h1>Daily needs, made easy.</h1><p>Browse demo products, add to cart and place a sample order.</p></div><div class="hero-icon">🥦</div></section>
+  <section id="customerView">
+    <div class="toolbar"><input id="search" placeholder="Search products…" aria-label="Search products"><select id="category"><option value="all">All categories</option><option>Grocery</option><option>Oil</option><option>Personal Care</option><option>Household</option></select></div>
+    <h2>Popular products</h2><div id="products" class="products"></div>
+    <section class="cart"><div class="section-head"><h2>Your cart</h2><button id="clearCart" class="text-btn">Clear</button></div><div id="cartItems">Your cart is empty.</div><div class="total"><b>Total</b><b id="total">₹0</b></div>
+      <h3>Checkout</h3><form id="checkout"><div class="form-grid"><input name="customer" placeholder="Your name" required><input name="phone" placeholder="Phone number" inputmode="tel" required><select name="fulfilment"><option value="Pickup">Store pickup</option><option value="Home delivery">Home delivery</option></select><select name="payment"><option>Cash on delivery / pickup</option><option>UPI (demo selection only)</option></select></div><button class="primary" type="submit">Place demo order</button><p class="note">Demo only: no real payment is collected.</p></form><p id="message" role="status"></p>
+    </section>
+  </section>
+  <section id="ownerView" hidden><div class="section-head"><h2>Owner panel</h2><button id="backCustomer" class="text-btn">Back to shop</button></div><p class="note">Demo PIN: 2468. This is not secure authentication.</p><div id="ownerOrders"></div></section>
+</main><footer>Demo website by <b>Sushant Web Solutions</b> · Your Local Business, Online.</footer>
+<script src="app.js"></script>
+</body></html>
